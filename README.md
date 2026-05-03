@@ -86,6 +86,15 @@ the post-quantum half delegates to [`mlkem-rs`](https://crates.io/crates/mlkem-r
 
 [1]: https://datatracker.ietf.org/doc/draft-ietf-tls-ecdhe-mlkem/
 
+## related crates
+
+other small rust pieces shipped alongside this one:
+
+- [`mlkem-rs`](https://github.com/f4rkh4d/mlkem-rs) FIPS 203 ML-KEM in pure rust (the post-quantum half this crate composes with x25519-dalek)
+- [`bashward`](https://github.com/f4rkh4d/bashward) checkpoint and rewind for bash side-effects in claude code
+- [`skill-scan`](https://github.com/f4rkh4d/skill-scan) local prompt-injection scanner for claude skills, MCP, AGENTS.md
+- [`pluvgo`](https://github.com/f4rkh4d/pluvgo) fast neovim plugin manager, single rust binary, no neovim required to install
+
 ## license
 
 dual-licensed under MIT or Apache-2.0, at your option.
