@@ -20,7 +20,7 @@ std = ["mlkem-rs/std", "x25519-dalek/alloc", "rand_core/std", "subtle/std", "zer
 [dependencies]
 mlkem-rs = { version = "0.8", default-features = false }
 x25519-dalek = { version = "2", default-features = false, features = ["static_secrets"] }
-rand_core = { version = "0.6", default-features = false }
+rand_core = { version = "0.10", default-features = false }
 subtle = { version = "2.5", default-features = false }
 zeroize = { version = "1.7", default-features = false, features = ["derive"] }
 
