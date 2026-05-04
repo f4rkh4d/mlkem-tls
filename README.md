@@ -72,6 +72,15 @@ cargo add mlkem-tls --no-default-features
 
 `tests/round_trip.rs` covers honest handshake round-trip on both 768 and 1024, exact byte-size assertions per the draft, wire-byte serialization round-trip, and `TryFrom` length errors.
 
+## audit readiness
+
+documents at the repo root for anyone commissioning a third-party audit:
+
+- [`SECURITY.md`](SECURITY.md) public threat model, scope, what is and is not under audit
+- [`SUPPLY_CHAIN.md`](SUPPLY_CHAIN.md) every runtime dep with role + maintainer + audit history
+
+the post-quantum half [`mlkem-rs`](https://github.com/f4rkh4d/mlkem-rs) ships its own audit-readiness pack (`SECURITY.md`, `SIDE_CHANNELS.md`, `AUDIT_SCOPE.md`, `FORMAL_VERIFICATION.md`, `SUPPLY_CHAIN.md`) plus 10 kani-verified formal proofs and a dudect-style timing harness.
+
 ## not audited
 
 the post-quantum half delegates to [`mlkem-rs`](https://crates.io/crates/mlkem-rs), which is unaudited. for production cryptography please use rustls's built-in PQ provider, which ships rustcrypto's audited [`ml-kem`](https://crates.io/crates/ml-kem) plus the same X25519 hybrid combiner. this crate exists for stacks that don't use rustls and need the hybrid combiner as a stand-alone reusable kem.
