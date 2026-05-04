@@ -4,6 +4,10 @@
 
 [![crates.io](https://img.shields.io/crates/v/mlkem-tls.svg)](https://crates.io/crates/mlkem-tls)
 [![docs.rs](https://img.shields.io/docsrs/mlkem-tls)](https://docs.rs/mlkem-tls)
+[![downloads](https://img.shields.io/crates/d/mlkem-tls.svg)](https://crates.io/crates/mlkem-tls)
+[![ci](https://github.com/f4rkh4d/mlkem-tls/actions/workflows/ci.yml/badge.svg)](https://github.com/f4rkh4d/mlkem-tls/actions)
+[![msrv](https://img.shields.io/badge/msrv-1.70-blue.svg)](#)
+[![no_std](https://img.shields.io/badge/no__std-yes-success.svg)](#)
 [![license](https://img.shields.io/crates/l/mlkem-tls.svg)](#license)
 
 ## why this exists
